@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fawad Ali, trading as Static Media, Marketing Services for HVAC Companies</title>
+<meta name="description" content="Fawad Ali, trading as Static Media is a marketing and advertising services company working with HVAC companies in the United States.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Normal document flow on purpose. No fixed full-screen wrapper, so a
+   headless scanner reads the same page a person sees. */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #050B1A !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+#sm-page {
+  position: relative;
+  width: 100%;
+  background: #050B1A;
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --black: #050B1A;
+  --dark: #081029;
+  --dark2: #0A1330;
+  --gold: #FCB118;
+  --gold2: #FFC94D;
+  --gold-grad: linear-gradient(135deg, #FCB118 0%, #FFC94D 50%, #FCB118 100%);
+  --gold-dim: rgba(252,177,24,0.1);
+  --gold-border: rgba(252,177,24,0.25);
+  --white: #F5F2EC;
+  --off-white: #D4CFC6;
+  --muted: #7B84A0;
+  --border: rgba(245,242,236,0.07);
+  --border2: rgba(245,242,236,0.14);
+  --radius: 8px;
+  --radius-lg: 16px;
+}
+body {
+  font-family: 'DM Sans', Arial, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.025; pointer-events: none; z-index: 9999;
+}
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(12,12,12,0.97);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 64px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.sm-logo {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-size: 20px; font-weight: 800;
+  letter-spacing: 3px; text-transform: uppercase;
+  background: var(--gold-grad);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.sm-navlinks { display: flex; gap: 40px; list-style: none; align-items: center; }
+.sm-navlinks a {
+  font-size: 12px; font-weight: 500; color: var(--muted);
+  text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase;
+  transition: color 0.2s;
+}
+.sm-navlinks a:hover { color: var(--gold2); }
+.sm-hero {
+  min-height: 82vh; padding: 120px 64px 100px;
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+}
+.sm-glow {
+  position: absolute; top: -120px; right: -80px;
+  width: 600px; height: 600px; pointer-events: none;
+  background: radial-gradient(ellipse, rgba(252,177,24,0.07) 0%, rgba(252,177,24,0.02) 45%, transparent 70%);
+}
+.sm-glow2 {
+  position: absolute; bottom: -100px; left: -60px;
+  width: 400px; height: 400px; pointer-events: none;
+  background: radial-gradient(ellipse, rgba(252,177,24,0.04) 0%, transparent 70%);
+}
+.sm-line {
+  position: absolute; width: 1px; pointer-events: none;
+  background: linear-gradient(to bottom, transparent, rgba(252,177,24,0.08), transparent);
+}
+.sm-hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; position: relative; z-index: 1; }
+.sm-eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 32px;
+}
+.sm-eyebrow::before {
+  content: ''; width: 32px; height: 1px;
+  background: var(--gold-grad); display: inline-block;
+}
+.sm-hero h1 {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-size: clamp(38px, 5.4vw, 66px); font-weight: 900;
+  line-height: 1.04; letter-spacing: -0.01em;
+  text-transform: uppercase; color: var(--white); margin-bottom: 28px;
+}
+.sm-hero h1 em {
+  font-style: normal;
+  background: var(--gold-grad);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.sm-hero-sub {
+  font-size: 16px; color: var(--muted); max-width: 560px;
+  line-height: 1.85; font-weight: 300;
+}
+section { padding: 96px 64px; }
+.sm-wrap { max-width: 1100px; margin: 0 auto; }
+.sm-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 18px;
+}
+.sm-label::before {
+  content: ''; width: 24px; height: 1px;
+  background: var(--gold-grad); display: inline-block;
+}
+.sm-title {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-size: clamp(28px, 3.6vw, 44px); font-weight: 800;
+  letter-spacing: -0.01em; text-transform: uppercase;
+  color: var(--white); line-height: 1.06; margin-bottom: 16px;
+}
+.sm-title em {
+  font-style: normal;
+  background: var(--gold-grad);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.sm-sub { font-size: 15px; color: var(--muted); max-width: 560px; line-height: 1.8; font-weight: 300; }
+#services { background: var(--dark); }
+.sm-steps {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  overflow: hidden; margin-top: 56px;
+}
+.sm-step { background: var(--dark); padding: 36px 28px; position: relative; overflow: hidden; }
+.sm-step-num {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-size: 44px; font-weight: 800;
+  background: var(--gold-grad);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; opacity: 0.22; line-height: 1; margin-bottom: 16px;
+}
+.sm-step h3 { font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 10px; }
+.sm-step p { font-size: 13px; color: var(--muted); line-height: 1.75; font-weight: 300; }
+#about { background: var(--black); }
+.sm-features {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  overflow: hidden; margin-top: 56px;
+}
+.sm-feature { background: var(--dark); padding: 38px 32px; }
+.sm-feature-num { font-family: 'Barlow', Arial, sans-serif; font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; margin-bottom: 16px; display: block; }
+.sm-feature h3 { font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
+.sm-feature p { font-size: 13px; color: var(--muted); line-height: 1.8; font-weight: 300; }
+#contact { background: var(--dark2); }
+.sm-contact-wrap { max-width: 760px; margin: 0 auto; }
+.sm-contact-card {
+  margin-top: 40px; background: var(--dark);
+  border: 1px solid var(--gold-border); border-radius: var(--radius-lg);
+  padding: 44px 40px;
+}
+.sm-contact-card h3 {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-size: 20px; font-weight: 800; text-transform: uppercase;
+  color: var(--white); margin-bottom: 14px; letter-spacing: -0.01em;
+}
+.sm-contact-card p { font-size: 14px; color: var(--muted); line-height: 1.85; font-weight: 300; margin-bottom: 14px; }
+.sm-contact-card p:last-child { margin-bottom: 0; }
+.sm-contact-card a { color: var(--gold2); text-decoration: none; }
+.sm-contact-card a:hover { text-decoration: underline; }
+.sm-callout {
+  background: rgba(245,242,236,0.03); border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg); padding: 24px 28px; margin: 16px 0 26px;
+}
+.sm-callout p:last-child { margin-bottom: 0; }
+.sm-callout strong { color: var(--white); font-weight: 600; }
+.sm-form-wrap { margin: 26px 0 8px; }
+.sm-form-wrap iframe { display: block; }
+.sm-consent {
+  font-size: 12px; color: rgba(245,242,236,0.34);
+  line-height: 1.75; font-weight: 300; margin-top: 24px;
+  padding-top: 22px; border-top: 1px solid var(--border);
+}
+.sm-consent a { color: rgba(252,177,24,0.6); text-decoration: underline; }
+.sm-consent a:hover { color: var(--gold2); }
+footer { background: #080808; padding: 60px 64px 44px; border-top: 1px solid var(--border); }
+.sm-foot-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 64px; margin-bottom: 48px;
+}
+.sm-foot-logo {
+  font-family: 'Barlow', Arial, sans-serif;
+  font-size: 15px; font-weight: 800; letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--gold-grad);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; margin-bottom: 14px; display: block; line-height: 1.3;
+}
+.sm-foot-brand p { font-size: 13px; color: rgba(245,242,236,0.2); line-height: 1.8; max-width: 280px; font-weight: 300; }
+.sm-foot-col h4 {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.16em;
+  text-transform: uppercase; color: rgba(245,242,236,0.2); margin-bottom: 18px;
+}
+.sm-foot-col ul { list-style: none; }
+.sm-foot-col li { margin-bottom: 10px; font-size: 13px; color: rgba(245,242,236,0.3); font-weight: 300; line-height: 1.6; }
+.sm-foot-col a { font-size: 13px; color: rgba(245,242,236,0.3); text-decoration: none; font-weight: 300; transition: color 0.2s; }
+.sm-foot-col a:hover { color: var(--gold2); }
+.sm-foot-bottom {
+  max-width: 1100px; margin: 0 auto; padding-top: 28px;
+  border-top: 1px solid var(--border);
+  display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
+}
+.sm-foot-bottom p { font-size: 12px; color: rgba(245,242,236,0.14); }
+.sm-foot-consent { max-width: 1100px; line-height: 1.75; color: rgba(245,242,236,0.24) !important; }
+.sm-foot-consent a { color: rgba(245,242,236,0.42); }
+.sm-foot-row { display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px; }
+.sm-foot-row a { color: rgba(245,242,236,0.3); text-decoration: none; }
+@media (max-width: 768px) {
+  nav { padding: 14px 20px; }
+  .sm-navlinks { display: none; }
+  .sm-hero { padding: 70px 20px 56px; min-height: auto; }
+  .sm-hero h1 { font-size: clamp(34px, 9vw, 60px); }
+  .sm-hero-sub { font-size: 15px; }
+  section { padding: 56px 20px; }
+  .sm-steps, .sm-features { grid-template-columns: 1fr; }
+  .sm-contact-card { padding: 32px 22px; }
+  .sm-foot-inner { grid-template-columns: 1fr; gap: 36px; }
+  .sm-callout { padding: 18px 20px; }
+}
+</style>
+</head>
+<body>
+<div id="sm-page">
+
+<nav>
+  <div class="sm-logo">Static Media</div>
+  <ul class="sm-navlinks">
+    <li><a href="#services">What We Do</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<section class="sm-hero">
+  <div class="sm-glow"></div>
+  <div class="sm-glow2"></div>
+  <div class="sm-line" style="left:22%;height:100%;top:0;opacity:0.6"></div>
+  <div class="sm-line" style="right:28%;height:65%;top:0;opacity:0.3"></div>
+  <div class="sm-hero-inner">
+    <div class="sm-eyebrow">Marketing &amp; Advertising Services · United States</div>
+    <h1>Advertising built for<br><em>HVAC.</em></h1>
+    <p class="sm-hero-sub">Fawad Ali, trading as Static Media is a marketing and advertising services company. We plan, build and manage digital advertising campaigns for HVAC companies across the United States. This page explains what we do, how we communicate with the businesses we work with, and how our messaging program works.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="sm-wrap">
+    <div class="sm-label">What We Do</div>
+    <h2 class="sm-title">Our <em>services</em></h2>
+    <p class="sm-sub">We are a marketing services provider. We do not install, sell, finance or service HVAC equipment, and we are not a licensed contractor.</p>
+    <div class="sm-steps">
+      <div class="sm-step">
+        <div class="sm-step-num">01</div>
+        <h3>Discovery</h3>
+        <p>We learn about the business we're working with, the services they offer, the areas they cover, and the capacity they have.</p>
+      </div>
+      <div class="sm-step">
+        <div class="sm-step-num">02</div>
+        <h3>Campaign Build</h3>
+        <p>We design advertising creative and build the targeting, tracking and landing experience for the campaign.</p>
+      </div>
+      <div class="sm-step">
+        <div class="sm-step-num">03</div>
+        <h3>Campaign Management</h3>
+        <p>We run and adjust campaigns on an ongoing basis, monitoring performance and making changes as the data comes in.</p>
+      </div>
+      <div class="sm-step">
+        <div class="sm-step-num">04</div>
+        <h3>Reporting</h3>
+        <p>We report back on how campaigns are performing so the business can make its own decisions about what to do next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sm-wrap">
+    <div class="sm-label">About</div>
+    <h2 class="sm-title">About <em>Static Media</em></h2>
+    <p class="sm-sub">A short summary of who we are, who we work with, and what we don't do.</p>
+    <div class="sm-features">
+      <div class="sm-feature">
+        <span class="sm-feature-num">01</span>
+        <h3>Who We Are</h3>
+        <p>Fawad Ali, trading as Static Media is a sole proprietorship providing marketing and advertising services. We work with a small number of businesses at a time.</p>
+      </div>
+      <div class="sm-feature">
+        <span class="sm-feature-num">02</span>
+        <h3>Who We Work With</h3>
+        <p>HVAC companies in the United States. All of our clients are businesses. We do not offer services to individual consumers.</p>
+      </div>
+      <div class="sm-feature">
+        <span class="sm-feature-num">03</span>
+        <h3>Where We Operate</h3>
+        <p>We are based in Kingston, New York and work with businesses across the United States. All communication is conducted in English.</p>
+      </div>
+      <div class="sm-feature">
+        <span class="sm-feature-num">04</span>
+        <h3>What We Don't Do</h3>
+        <p>We are not a HVAC installer. We do not install, sell, finance, warranty or service HVAC equipment, and we are not a licensed contractor.</p>
+      </div>
+      <div class="sm-feature">
+        <span class="sm-feature-num">05</span>
+        <h3>No Guarantees</h3>
+        <p>Advertising results vary. We do not guarantee any specific outcome, volume, cost or return for any business we work with.</p>
+      </div>
+      <div class="sm-feature">
+        <span class="sm-feature-num">06</span>
+        <h3>How We Communicate</h3>
+        <p>By email, by phone, and by SMS where a business has given consent through the form on this page. Details are set out below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="sm-contact-wrap">
+    <div class="sm-label">Contact</div>
+    <h2 class="sm-title">How to <em>reach us</em></h2>
+    <p class="sm-sub">Our contact details are below. The form on this page is the only place on this website where information can be submitted.</p>
+    <div class="sm-contact-card">
+      <h3>Fawad Ali, trading as Static Media</h3>
+      <p>
+        36 Smith Ave<br>
+        Kingston, NY 12401, United States
+      </p>
+      <p>
+        Email: <a href="mailto:fawad@staticmedia.org">fawad@staticmedia.org</a>
+      </p>
+      <div class="sm-callout">
+        <p><strong>Who receives our texts, and who never does.</strong></p>
+        <p>We send text messages only to the HVAC business owners and staff who gave us their number through the form on this page, about their own inquiry into qualified HVAC leads. We never send text messages to homeowners or consumers. Static Media sells marketing services directly to HVAC businesses. We do not sell consumer contact lists, and we do not operate a multi-level or affiliate marketing program.</p>
+      </div>
+      <div class="sm-form-wrap">
+        <!-- The live GHL "Website Intake - HVAC" form. This is the ONLY opt-in
+             point on this website. Do not add any other form, button, or chat
+             widget to this page. -->
+        <iframe src="https://api.leadconnectorhq.com/widget/form/CShq6BUxSpNc9PL0zZLo" style="width:100%;height:1173px;border:none;border-radius:8px" id="inline-CShq6BUxSpNc9PL0zZLo" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Website Intake - HVAC" data-height="1173" data-layout-iframe-id="inline-CShq6BUxSpNc9PL0zZLo" data-form-id="CShq6BUxSpNc9PL0zZLo" title="Website Intake - HVAC"></iframe>
+        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+      </div>
+      <p class="sm-consent">
+        By providing your phone number in the form on this page, you consent to receive informational, service, and promotional SMS text messages from Fawad Ali, trading as Static Media about qualified HVAC leads and your inquiry about our marketing services. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time, or HELP for assistance. Consent to receive text messages is never a condition of using our services. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="sm-foot-inner">
+    <div class="sm-foot-brand">
+      <span class="sm-foot-logo">Fawad Ali, trading as Static Media</span>
+      <p>A marketing and advertising services company working with HVAC businesses across the United States.</p>
+    </div>
+    <div class="sm-foot-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#services">What We Do</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="sm-foot-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:fawad@staticmedia.org">fawad@staticmedia.org</a></li>
+        <li>36 Smith Ave<br>Kingston, NY 12401</li>
+      </ul>
+    </div>
+  </div>
+  <div class="sm-foot-bottom">
+    <p class="sm-foot-consent">By providing your phone number in the form on this page, you consent to receive informational, service, and promotional SMS text messages from Fawad Ali, trading as Static Media about qualified HVAC leads and your inquiry about our marketing services. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time, or HELP for assistance. Consent is never a condition of using our services. View our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>.</p>
+    <div class="sm-foot-row">
+      <p>© 2026 Fawad Ali, trading as Static Media. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms and Conditions</a></p>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+/* Smooth-scroll for in-page anchor links. The form above is the only opt-in
+   point on this page. Do not add a chat widget here. */
+(function () {
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = this.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if (!el) return;
+      e.preventDefault();
+      var top = el.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop);
+      window.scrollTo({ top: top - 70, behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
